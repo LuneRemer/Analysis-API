@@ -1,7 +1,9 @@
 # Backend(Spring Boot API using JPA)
 
 ## Database(Mysql) Schema
->create table News(
+<pre>
+<code>
+create table News(
 news_id int not null,
 title varchar(2000) not null,
 url varchar(2000) not null,
@@ -42,6 +44,7 @@ date timestamp not null,
 constraint pk_comments primary key(comments_id),
 constraint fk_comments foreign key(news_id) references News(news_id)
 );
-
+</code>
+</pre>
 
 
