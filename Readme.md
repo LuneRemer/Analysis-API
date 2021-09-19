@@ -50,12 +50,13 @@ constraint fk_comments foreign key(news_id) references News(news_id)
 </code>
 </pre>
 
-## API URL
+## API URL(So far)
 * /api/all
- * Return all tuples in News table 
+  * Return all tuples in News table 
 * /api/join
- * Return Ageanalysis's tuple where newsId is same to News's newsId
-** <API contents and URL will be changed depending on what to show on Vue.js> **
+  * Return Ageanalysis's tuple where newsId is same to News's newsId
+
+** API contents and URL will be changed depending on what to show on Vue.js **
  
 
 
