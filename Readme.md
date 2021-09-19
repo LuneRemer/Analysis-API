@@ -1,8 +1,8 @@
 # Backend(Spring Boot API using JPA)
-*Version
-  *Spring Boot 2.2.7
-  *java 1.8
-  *MySql 8
+* Version
+  * Spring Boot 2.2.7
+  * java 1.8
+  * MySql 8
 ## Database(Mysql) Schema
 <pre>
 <code>
