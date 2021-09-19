@@ -26,12 +26,12 @@ constraint fk_gender foreign key(news_id) references News(news_id)
 create table AgeAnalysis(
 age_id int not null,
 news_id int not null,
-10s double not null,
-20s double not null,
-30s double not null,
-40s double not null,
-50s double not null,
-60sup double not null,
+tens double not null,
+twenties double not null,
+thirties double not null,
+fourties double not null,
+fifties double not null,
+sixties double not null,
 constraint pk_age primary key(age_id),
 constraint fk_age foreign key(news_id) references News(news_id)
 );
