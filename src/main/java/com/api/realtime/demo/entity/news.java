@@ -6,9 +6,9 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@NamedQuery(name = "News.byNewsId", query = "select e from News e where e.newsId > ?1")
-@NamedQuery(name = "findAllNews", query = "select e from News e where e.newsId >= 0")
-public class News implements Serializable {
+@NamedQuery(name = "News.byNewsId", query = "select e from news e where e.newsId > ?1")
+@NamedQuery(name = "findAllNews", query = "select e from news e where e.newsId >= 0")
+public class news implements Serializable {
 //    private Long id;
     private int newsId;
     private String title;
@@ -70,7 +70,7 @@ public class News implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        News news = (News) o;
+        news news = (com.api.realtime.demo.entity.news) o;
         return newsId == news.newsId && Objects.equals(title, news.title) && Objects.equals(url, news.url) && Objects.equals(date, news.date);
     }
 

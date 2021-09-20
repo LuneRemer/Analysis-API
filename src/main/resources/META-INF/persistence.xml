@@ -5,13 +5,13 @@
              version="3.0">
   <persistence-unit name="default">
 <!--    <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
-    <class>com.api.realtime.demo.entity.Ageanalysis</class>
-    <class>com.api.realtime.demo.entity.Comments</class>
-    <class>com.api.realtime.demo.entity.Genderanalysis</class>
-    <class>com.api.realtime.demo.entity.News</class>
+    <class>com.api.realtime.demo.entity.ageanalysis</class>
+    <class>com.api.realtime.demo.entity.comments</class>
+    <class>com.api.realtime.demo.entity.genderanalysis</class>
+    <class>com.api.realtime.demo.entity.news</class>
 
     <properties>
-      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/newsComments?serverTimezone=UTC"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://3.35.115.140:3306/newsComments?serverTimezone=UTC"/>
       <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
       <property name="hibernate.connection.user" value="root"/>
       <property name="hibernate.connection.password" value="1234"/>

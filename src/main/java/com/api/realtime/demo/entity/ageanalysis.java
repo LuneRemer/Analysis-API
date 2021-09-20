@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class Ageanalysis implements Serializable {
+public class ageanalysis implements Serializable {
 //    private Long id;
     private int ageId;
     private int newsId;
@@ -110,7 +110,7 @@ public class Ageanalysis implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Ageanalysis that = (Ageanalysis) o;
+        ageanalysis that = (ageanalysis) o;
         return ageId == that.ageId && newsId == that.newsId && Double.compare(that.tens, tens) == 0 && Double.compare(that.twenties, twenties) == 0 && Double.compare(that.thirties, thirties) == 0 && Double.compare(that.fourties, fourties) == 0 && Double.compare(that.fifties, fifties) == 0 && Double.compare(that.sixties, sixties) == 0;
     }
 

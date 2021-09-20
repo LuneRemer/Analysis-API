@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class Genderanalysis implements Serializable {
+public class genderanalysis implements Serializable {
 //    private Long id;
     private int genderId;
     private int newsId;
@@ -66,7 +66,7 @@ public class Genderanalysis implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Genderanalysis that = (Genderanalysis) o;
+        genderanalysis that = (genderanalysis) o;
         return genderId == that.genderId && newsId == that.newsId && Double.compare(that.male, male) == 0 && Double.compare(that.female, female) == 0;
     }
 

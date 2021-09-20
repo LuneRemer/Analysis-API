@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-public class Comments implements Serializable {
+public class comments implements Serializable {
 //    private Long id;
     private int commentsId;
     private int newsId;
@@ -100,7 +100,7 @@ public class Comments implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Comments comments = (Comments) o;
+        comments comments = (com.api.realtime.demo.entity.comments) o;
         return commentsId == comments.commentsId && newsId == comments.newsId && recommended == comments.recommended && unrecommended == comments.unrecommended && Objects.equals(contents, comments.contents) && Objects.equals(writer, comments.writer) && Objects.equals(date, comments.date);
     }
 
